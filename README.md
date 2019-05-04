@@ -5,6 +5,8 @@
 [![coverage][cover]][cover-url]
 [![chat][chat]][chat-url]
 
+This fork of css-loader 0.28.11 removes `cssnano` to prevent `npm audit` warnings, and remain compatible with Webpack 3. The `minimize` option no longer has any effect, so it's recommended that you use a PostCSS workflow with `cssnano` or similar, externally from this library (as is the case with newer versions of this loader).
+
 <div align="center">
   <img width="180" height="180" vspace="20"
     src="https://cdn.worldvectorlogo.com/logos/css-3.svg">
